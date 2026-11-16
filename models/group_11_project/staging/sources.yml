@@ -2,14 +2,13 @@ version: 2
 sources:
   - name: raw_project
     description: Raw data loaded from NYC Open Data
-    database: brianimperiale-cis9440
     schema: group_project
     tables:
       - name: primary_data_open_restaurant_inspections
         description: |
           NYC Open Restaurant inspections
-          One row per service inspection.
+          One row per inspection.
       - name: source_service_requests_project
         description: |
-          NYC 311 requests filtered tocomplaint_type=Outdoor Dining
-          one row per request.
+          NYC 311 requests filtered to complaint_type = Outdoor Dining
+          One row per request.
